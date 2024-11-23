@@ -8,7 +8,7 @@ const SkillCard = ({ index, title, list }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
+      className="xs:w-[250px] w-full h-full card-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -16,13 +16,15 @@ const SkillCard = ({ index, title, list }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-start items-start flex-col"
+        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-start items-start flex-col text-[18px] "
       >
-        <h3 className="text-taupe text-[18px] font-bold text-center">
+        <h3 className="text-platinum text-[18px] font-bold text-center">
           {title}
         </h3>
         {list.map((item, index) => (
-          <p key={index}>{item}</p>
+          <p key={index} className="text-taupe">
+            {item}
+          </p>
         ))}
       </div>
     </motion.div>

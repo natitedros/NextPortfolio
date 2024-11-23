@@ -2,6 +2,7 @@ import {
   frontend,
   backend,
   ux,
+  mobile,
   prototyping,
   javascript,
   typescript,
@@ -27,6 +28,14 @@ import {
   dcc,
   kelhel,
   microverse,
+  adega,
+  mekdim,
+  rateeat,
+  vocabtype,
+  korenti,
+  empire,
+  nerd,
+  a2sv,
 } from "../assets";
 
 export const navLinks = [
@@ -55,7 +64,7 @@ const services = [
   },
   {
     title: "Mobile App Developer",
-    icon: ux,
+    icon: mobile,
   },
   {
     title: "Cloud Engineer",
@@ -76,12 +85,11 @@ const skills = [
       "Dart",
       "HTML5 & CSS",
       "SQL",
-      "Tailwind",
     ],
   },
   {
     title: "Frameworks",
-    list: ["NodeJs", "Flutter", ".Net Framework", "Spring Boot", "Flask"],
+    list: ["NodeJs", "Flutter", ".Net", "Spring Boot", "Flask", "Tailwind"],
   },
   {
     title: "Tools",
@@ -150,32 +158,39 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Front-End Developer",
-    company_name: "Cover Hunt",
-    icon: coverhunt,
-    iconBg: "#333333",
-    date: "Aug 2021 - Feb 2022",
+    title: "Embedded Systems Engineering Intern",
+    company_name: "New Era Research and Development",
+    icon: nerd,
+    iconBg: "#FFFFFF",
+    date: "Mar 2022 - Jun 2022",
   },
   {
-    title: "Mentor (Volunteer)",
-    company_name: "Microverse",
-    icon: microverse,
+    title: "Software Engineering Mentor",
+    company_name: "Africa to Silicon Valley",
+    icon: a2sv,
     iconBg: "#333333",
-    date: "Mar 2022 - May 2022",
+    date: "Oct 2022 - May 2023",
   },
   {
-    title: "Junior Software Engineer",
-    company_name: "Kelhel",
-    icon: kelhel,
+    title: "Mobile App Developer",
+    company_name: "Africa to Silicon Valley",
+    icon: a2sv,
     iconBg: "#333333",
-    date: "May 2022 - Oct 2022",
+    date: "Sep 2023 - Feb 2024",
   },
   {
-    title: "Full Stack Developer",
-    company_name: "Diversity Cyber Council",
-    icon: dcc,
+    title: "Software Engineer",
+    company_name: "Korenti Craft Technologies",
+    icon: korenti,
+    iconBg: "#eaeaec",
+    date: "Mar 2022 - Oct 2024",
+  },
+  {
+    title: "Software Engineer",
+    company_name: "Empire Transportation Provider Inc",
+    icon: empire,
     iconBg: "#333333",
-    date: "Sep 2022 - Present",
+    date: "Aug 2024 - present",
   },
 ];
 
@@ -199,7 +214,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: komikult,
+    image: adega,
     repo: "https://github.com/natitedros/Car-Accident-Management",
     demo: "https://drive.google.com/file/d/1w-Nh51HnTc-zfUFYV0To3ou6D8O7LDki/view?usp=sharing",
   },
@@ -207,7 +222,7 @@ const projects = [
     id: "project-2",
     name: "RateEat",
     description:
-      "A leaderboard list app that displays scores submitted by different players.",
+      "A food and restaurant rating and reviewing application for Ethiopia.",
     tags: [
       {
         name: "react",
@@ -222,7 +237,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: leaderboard,
+    image: rateeat,
     repo: "#",
     demo: "https://play.google.com/store/apps/details?id=org.a2sv.rateeat_mobile",
   },
@@ -245,7 +260,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: math,
+    image: vocabtype,
     repo: "https://github.com/natitedros/Typing-Test",
     demo: "https://typingtest-natnaeldesta.netlify.app/",
   },
@@ -267,7 +282,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: movie,
+    image: mekdim,
     repo: "https://github.com/NathanZK/Mekdim",
     demo: "#",
   },

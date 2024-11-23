@@ -9,6 +9,7 @@ import logotext from "./logo/logo-text-black.png";
 import shaq from "./personal/nati-logo.png";
 
 import backend from "./icons/backend.png";
+import mobile from "./icons/mobile.png";
 import ux from "./icons/ux.png";
 import frontend from "./icons/frontend.png";
 import prototyping from "./icons/prototyping.png";
@@ -42,6 +43,10 @@ import coverhunt from "./company/coverhunt.png";
 import dcc from "./company/dcc.png";
 import kelhel from "./company/kelhel.png";
 import microverse from "./company/microverse.png";
+import nerd from "./company/nerd.jpeg";
+import korenti from "./company/korenti.png";
+import empire from "./company/empire.png";
+import a2sv from "./company/a2sv.png";
 
 import komikult from "./projects/komikult.png";
 import leaderboard from "./projects/leaderboard.png";
@@ -49,6 +54,10 @@ import math from "./projects/math-magicians.png";
 import movie from "./projects/movie-metro.png";
 import nyeusi from "./projects/nyeusi.png";
 import space from "./projects/space-hub.png";
+import adega from "./projects/adega-home.png";
+import mekdim from "./projects/mekdim-home.png";
+import rateeat from "./projects/rateat.webp";
+import vocabtype from "./projects/vocabtype.png";
 
 export {
   bwmap,
@@ -61,6 +70,7 @@ export {
   backend,
   ux,
   frontend,
+  mobile,
   prototyping,
   github,
   close,
@@ -96,4 +106,12 @@ export {
   dcc,
   kelhel,
   microverse,
+  adega,
+  mekdim,
+  rateeat,
+  vocabtype,
+  korenti,
+  empire,
+  a2sv,
+  nerd,
 };
