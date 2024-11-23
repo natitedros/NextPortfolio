@@ -63,6 +63,32 @@ const services = [
   },
 ];
 
+const skills = [
+  {
+    title: "Languages",
+    list: [
+      "Java",
+      "C++",
+      "C#",
+      "Python",
+      "Javascript(ES6)",
+      "Typescript",
+      "Dart",
+      "HTML5 & CSS",
+      "SQL",
+      "Tailwind",
+    ],
+  },
+  {
+    title: "Frameworks",
+    list: ["NodeJs", "Flutter", ".Net Framework", "Spring Boot", "Flask"],
+  },
+  {
+    title: "Tools",
+    list: ["Git", "AWS", "Postman", "Figma"],
+  },
+];
+
 const technologies = [
   {
     name: "HTML 5",
@@ -247,4 +273,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, projects, skills };
