@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { send, sendHover } from "../assets";
+import dotenv from "dotenv";
 
 const Contact = () => {
   const formRef = useRef();
@@ -29,8 +30,8 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        "service_qq8subp", // paste your ServiceID here (you'll get one when your service is created).
-        "template_ak87cy9", // paste your TemplateID here (you'll find it under email templates).
+        import.meta.env.VITE_SERVICE_ID, // paste your ServiceID here (you'll get one when your service is created).
+        import.meta.env.VITE_TEMPLATE_ID, // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
           to_name: "Natnael Desta", // put your name here.
@@ -38,7 +39,7 @@ const Contact = () => {
           to_email: "natnaeltedrosdesta@gmail.com", //put your email here.
           message: form.message,
         },
-        "YnQtKkfM6w2nw8zIO" //paste your Public Key here. You'll get it in your profile section.
+        import.meta.env.VITE_PUBLIC_KEY //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
