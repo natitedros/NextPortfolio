@@ -29,8 +29,8 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        import.meta.env.VITE_SERVICE_ID, // paste your ServiceID here (you'll get one when your service is created).
-        import.meta.env.VITE_TEMPLATE_ID, // paste your TemplateID here (you'll find it under email templates).
+        "service_n7vlyzq", // paste your ServiceID here (you'll get one when your service is created).
+        "template_n36pheh", // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
           to_name: "Natnael Desta", // put your name here.
@@ -38,7 +38,7 @@ const Contact = () => {
           to_email: "natnaeltedrosdesta@gmail.com", //put your email here.
           message: form.message,
         },
-        import.meta.env.VITE_PUBLIC_KEY //paste your Public Key here. You'll get it in your profile section.
+        "YnQtKkfM6w2nw8zIO" //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
