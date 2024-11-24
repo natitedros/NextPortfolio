@@ -5,7 +5,6 @@ import {
   Experience,
   Hero,
   Navbar,
-  Tech,
   Projects,
   Skills,
 } from "./components";

@@ -6,7 +6,7 @@ import worldmap from "./backgrounds/world-map.png";
 import logo from "./logo/logo-bold.png";
 import logotext from "./logo/logo-text-black.png";
 
-import shaq from "./personal/nati-logo.png";
+import nati from "./personal/nati-logo.png";
 
 import backend from "./icons/backend.png";
 import mobile from "./icons/mobile.png";
@@ -39,21 +39,11 @@ import graphql from "./tech/graphql.png";
 import postgresql from "./tech/postgresql.png";
 import rubyrails from "./tech/rubyrails.png";
 
-import coverhunt from "./company/coverhunt.png";
-import dcc from "./company/dcc.png";
-import kelhel from "./company/kelhel.png";
-import microverse from "./company/microverse.png";
 import nerd from "./company/nerd.jpeg";
 import korenti from "./company/korenti.png";
 import empire from "./company/empire.png";
 import a2sv from "./company/a2sv.png";
 
-import komikult from "./projects/komikult.png";
-import leaderboard from "./projects/leaderboard.png";
-import math from "./projects/math-magicians.png";
-import movie from "./projects/movie-metro.png";
-import nyeusi from "./projects/nyeusi.png";
-import space from "./projects/space-hub.png";
 import adega from "./projects/adega-home.png";
 import mekdim from "./projects/mekdim-home.png";
 import rateeat from "./projects/rateat.webp";
@@ -66,7 +56,7 @@ export {
   worldmap,
   logo,
   logotext,
-  shaq,
+  nati,
   backend,
   ux,
   frontend,
@@ -96,16 +86,6 @@ export {
   redux,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
   adega,
   mekdim,
   rateeat,

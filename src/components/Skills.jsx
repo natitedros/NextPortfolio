@@ -16,7 +16,7 @@ const SkillCard = ({ index, title, list }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-start items-start flex-col text-[18px] "
+        className="bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-start items-start flex-col text-[18px]"
       >
         <h3 className="text-platinum text-[18px] font-bold text-center">
           {title}

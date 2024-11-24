@@ -18,16 +18,6 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
-  leaderboard,
-  math,
-  movie,
-  nyeusi,
-  space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
   adega,
   mekdim,
   rateeat,
@@ -243,7 +233,7 @@ const projects = [
   },
   {
     id: "project-3",
-    name: "Vocabtype",
+    name: "Vocab-type",
     description:
       "Speed typing game with word definitions to improve vocabulary.",
     tags: [
