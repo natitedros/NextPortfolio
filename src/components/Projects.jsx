@@ -10,7 +10,7 @@ const ProjectCard = ({
   id,
   name,
   description,
-  image,
+  image, // make this a list
   repo,
   demo,
   index,
@@ -32,6 +32,7 @@ const ProjectCard = ({
       ></div>
 
       <img
+        // make a sliding image list
         src={image}
         alt={name}
         className="absolute w-full h-full object-cover rounded-[24px]"

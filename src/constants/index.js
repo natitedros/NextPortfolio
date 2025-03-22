@@ -79,7 +79,7 @@ const skills = [
   },
   {
     title: "Frameworks",
-    list: ["NodeJs", "Flutter", ".Net", "Spring Boot", "Flask", "Tailwind"],
+    list: ["NodeJs", "Flutter", ".Net Core", "Spring Boot", "Flask", "Tailwind"],
   },
   {
     title: "Tools",

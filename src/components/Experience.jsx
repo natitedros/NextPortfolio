@@ -49,6 +49,7 @@ const ExperienceCard = ({ experience }) => (
       >
         {experience.company_name}
       </p>
+      {/* Add a work description tag */}
     </div>
   </VerticalTimelineElement>
 );

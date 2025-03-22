@@ -44,11 +44,11 @@ const Hero = () => {
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase"
               >
-                Natnael
+                Natnael,
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              I build attractive web and mobile apps that make life easier.{" "}
+            A tech enthusiast passionate about innovation and strategic problem-solving.{" "}
               <br className="sm:block hidden" />
             </p>
           </div>
@@ -85,12 +85,14 @@ const Hero = () => {
           </a>
         </div>
 
-        {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[67vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="absolute bottom-0 right-0 
+                max-w-[60vw] max-h-[90vh] 
+                sm:max-w-[55vw] sm:max-h-[80vh]
+                md:max-w-[45vw] md:max-h-[70vh]
+                lg:max-w-[40vw] lg:max-h-[60vh]
+                xl:max-w-[35vw] xl:max-h-[55vh]"
             src={nati}
             alt="natnael"
           />

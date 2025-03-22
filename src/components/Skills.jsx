@@ -8,7 +8,7 @@ const SkillCard = ({ index, title, list }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="xs:w-[250px] w-full h-full card-gradient p-[1px] rounded-[20px] shadow-card"
+      className="xs:w-[250px] w-full h-full card-gradient rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -22,7 +22,7 @@ const SkillCard = ({ index, title, list }) => {
           {title}
         </h3>
         {list.map((item, index) => (
-          <p key={index} className="text-taupe">
+          <p key={index} className="text-taupe font-bold">
             {item}
           </p>
         ))}
