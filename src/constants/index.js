@@ -217,8 +217,11 @@ const projects = [
   {
     id: "project-1",
     name: "Car Accident Management",
-    description:
-      "My BSc final year project prototype for a car accident management system.",
+    description: [
+      "Project: Developed a multi-sided mobile app integrated with vehicle hardware to detect and report car accidents in Addis Ababa, aiming to reduce emergency response times and traffic congestion.",
+      "My Roles: Designed the UI, developed the mobile app and backend, and integrated hardware components for prototype testing.",
+      "Result: Enabled automatic/manual accident reporting to nearby traffic police for faster assistance, improving road safety and traffic flow.",
+    ],
     tags: [
       {
         name: "flutter",
@@ -233,18 +236,25 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: adega,
+    images: [rateeat, mekdim],
     repo: "https://github.com/natitedros/Car-Accident-Management",
     demo: "https://drive.google.com/file/d/1w-Nh51HnTc-zfUFYV0To3ou6D8O7LDki/view?usp=sharing",
+    duration: "9 months",
+    category: "Full Stack Development",
+    team: "2",
+    technologies: ["React", "Tailwind", "Typescript"],
   },
   {
     id: "project-2",
     name: "RateEat",
-    description:
-      "A food and restaurant rating and reviewing application for Ethiopia.",
+    description: [
+      "Project: Developed RateEat, a food and restaurant rating mobile app deployed and actively used in Ethiopia. Famous among college freshemen.",
+      "My Roles: Led mobile development, UI design, clean architecture implementation, test-driven development (TDD), and state management.",
+      "Result: Successfully launched a functional app that helps users discover and rate restaurants, improving dining experiences.",
+    ],
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
@@ -252,19 +262,26 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "bloc",
         color: "pink-text-gradient",
       },
     ],
-    image: rateeat,
+    images: [rateeat, mekdim],
     repo: "#",
     demo: "https://play.google.com/store/apps/details?id=org.a2sv.rateeat_mobile",
+    duration: "6 months",
+    category: "Mobile Development",
+    team: "7",
+    technologies: ["React", "Tailwind", "Typescript"],
   },
   {
     id: "project-3",
     name: "Typing-Test",
-    description:
-      "Speed typing game with word definitions to improve vocabulary.",
+    description: [
+      "Project: Built a typing speed test game that measures WPM (words per minute) while teaching users new vocabulary through definitions fetched from a free API.",
+      "My Roles: Developed the frontend application, implemented word fetching logic, and designed a responsive UI with light/dark mode toggle.",
+      "Result: Created an engaging, educational tool that helps users improve typing speed and learn new words in a customizable interface.",
+    ],
     tags: [
       {
         name: "react",
@@ -279,14 +296,22 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: vocabtype,
+    images: [rateeat, mekdim],
     repo: "https://github.com/natitedros/Typing-Test",
     demo: "https://typingtest-natnaeldesta.netlify.app/",
+    duration: "15 days",
+    category: "Frontend Development",
+    team: "1",
+    technologies: ["React", "Tailwind", "Typescript"],
   },
   {
     id: "project-4",
     name: "Mekdim School Portal",
-    description: `An enterprise-level school portal web application made by a team of 26 students I led.`,
+    description: [
+      "Project: Developed a web-based school management application as a semester project for a Software Engineering course, aimed at streamlining administrative and academic processes.",
+      "My Roles: Served as lead manager for a 26-member team during the design phase and contributed to frontend implementation.",
+      "Result: Delivered a functional prototype demonstrating structured teamwork and software engineering principles in a real-world educational context.",
+    ],
     tags: [
       {
         name: "nodejs",
@@ -301,9 +326,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: mekdim,
+    images: [rateeat, mekdim],
     repo: "https://github.com/NathanZK/Mekdim",
     demo: "#",
+    duration: "3 months",
+    category: "Frontend Development",
+    team: "27",
+    technologies: ["React", "Tailwind", "Typescript"],
   },
 ];
 

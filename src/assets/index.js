@@ -23,6 +23,8 @@ import menu from "./icons/menu.png";
 import resume from "./icons/resume.png";
 import send from "./icons/send.png";
 import sendHover from "./icons/sendHover.png";
+import leftArrow from "./icons/left-arrow.png";
+import rightArrow from "./icons/right-arrow.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -94,4 +96,6 @@ export {
   empire,
   a2sv,
   nerd,
+  leftArrow,
+  rightArrow,
 };

@@ -2,28 +2,53 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { github, pineapple, pineappleHover } from "../assets";
+import {
+  github,
+  pineapple,
+  pineappleHover,
+  leftArrow,
+  rightArrow,
+} from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
 const ProjectCard = ({
   id,
   name,
+  category,
+  team,
   description,
-  image, // make this a list
+  images,
   repo,
   demo,
+  duration,
+  technologies,
+  tags,
   index,
   active,
   handleClick,
 }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
       } flex items-center justify-center min-w-[70px] 
-      h-[480px] cursor-pointer card-shadow`}
+      h-[480px] cursor-pointer card-shadow overflow-hidden`}
       onClick={() => handleClick(id)}
     >
       <div
@@ -43,24 +68,64 @@ const ProjectCard = ({
           </h3>
         </div>
       ) : (
-        <>
-          <img
-            // make a sliding image list
-            src={image}
-            alt={name}
-            className="absolute w-full h-full object-cover rounded-[24px]"
-          />
-          <div
-            className="absolute bottom-0 p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20"
-          >
-            <div className="absolute inset-0 flex justify-end m-3">
+        <div className="absolute inset-0 flex overflow-hidden rounded-[24px]">
+          {/* Slideshow Section */}
+          <div className="absolute w-1/2 h-1/2 top-0">
+            {images.length > 0 && (
+              <>
+                <img
+                  src={images[currentImageIndex]}
+                  alt={`${name} project image ${currentImageIndex + 1}`}
+                  className="absolute w-full h-full object-cover"
+                />
+                {images.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 
+                      bg-black/20 text-white p-2 rounded-full z-20"
+                    >
+                      <img src={leftArrow} alt="Previous" className="w-6 h-6" />
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 
+                      bg-black/20 text-white p-2 rounded-full z-20"
+                    >
+                      <img src={rightArrow} alt="Next" className="w-6 h-6" />
+                    </button>
+                  </>
+                )}
+                <div
+                  className="absolute bottom-2 left-1/2 transform -translate-x-1/2 
+                flex space-x-2 z-20"
+                >
+                  {images.map((_, index) => (
+                    <div
+                      key={index}
+                      className={`w-2 h-2 rounded-full ${
+                        index === currentImageIndex ? "bg-white" : "bg-gray-400"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Project Info Section */}
+          <div className="absolute w-1/2 h-1/2 right-0 p-4 bg-[rgba(50,50,50,0.8)] text-white">
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-2xl font-bold">{name}</h2>
               {repo !== "#" && (
                 <div
-                  onClick={() => window.open(repo, "_blank")}
-                  className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    window.open(repo, "_blank");
+                  }}
+                  className="bg-night w-11 h-11 rounded-full 
                   flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]"
+                  opacity-[0.9] z-20"
                 >
                   <img
                     src={github}
@@ -71,52 +136,62 @@ const ProjectCard = ({
               )}
             </div>
 
-            <h2
-              className="font-bold sm:text-[32px] text-[24px] 
-              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]"
-            >
-              {name}
-            </h2>
-            <p
+            <div className="mb-4">
+              <p className="font-semibold">Category: {category}</p>
+              <p className="font-semibold">Team Size: {team} Members</p>
+              <p className="font-semibold">Duration: {duration}</p>
+              <div>
+                <p className="font-semibold">Technologies:</p>
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {tags.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="bg-gray-700 px-2 py-1 rounded-md text-xs"
+                    >
+                      {tech.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              {demo !== "#" && (
+                <div className="flex w-full">
+                  <button
+                    className="live-demo flex 
+                text-[14px] text-timberWolf 
+                font-bold font-beckman items-center px-3 
+                whitespace-nowrap gap-1
+                rounded-[10px] glassmorphism mt-1
+               hover:bg-battleGray 
+                hover:text-eerieBlack transition duration-[0.2s] 
+                ease-in-out z-20"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.open(demo, "_blank");
+                    }}
+                  >
+                    Project Link
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Scrollable Description */}
+          <div
+            className="absolute bottom-0 left-0 w-full h-1/2 p-4
+            bg-jetLight max-h-[250px] overflow-y-auto"
+          >
+            <ul
               className="text-silver sm:text-[14px] text-[12px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
-              font-poppins tracking-[1px]"
+              font-poppins tracking-[1px] list-disc pl-2"
             >
-              {description}
-            </p>
-            {demo !== "#" && (
-              <button
-                className="live-demo flex justify-between 
-              sm:text-[16px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-                onClick={() => window.open(demo, "_blank")}
-                onMouseOver={() => {
-                  document
-                    .querySelector(".btn-icon")
-                    .setAttribute("src", pineappleHover);
-                }}
-                onMouseOut={() => {
-                  document
-                    .querySelector(".btn-icon")
-                    .setAttribute("src", pineapple);
-                }}
-              >
-                <img
-                  src={pineapple}
-                  alt="pineapple"
-                  className="btn-icon sm:w-[34px] sm:h-[34px] 
-                  w-[30px] h-[30px] object-contain"
-                />
-                LIVE DEMO
-              </button>
-            )}
+              {description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ul>
           </div>
-        </>
+        </div>
       )}
     </motion.div>
   );
