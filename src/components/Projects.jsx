@@ -22,8 +22,8 @@ const ProjectCard = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
-      } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow`}
+      } flex items-center justify-center min-w-[70px] 
+      h-[480px] cursor-pointer card-shadow`}
       onClick={() => handleClick(id)}
     >
       <div
@@ -31,18 +31,11 @@ const ProjectCard = ({
       h-full w-full opacity-[0.5] rounded-[24px]"
       ></div>
 
-      <img
-        // make a sliding image list
-        src={image}
-        alt={name}
-        className="absolute w-full h-full object-cover rounded-[24px]"
-      />
-
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
+        <div className="flex items-center justify-start pr-[8.5rem]">
           <h3
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
+        whitespace-nowrap sm:text-[27px] text-[24px] text-timberWolf tracking-[3px]
         absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
         leading-none z-20"
           >
@@ -51,6 +44,12 @@ const ProjectCard = ({
         </div>
       ) : (
         <>
+          <img
+            // make a sliding image list
+            src={image}
+            alt={name}
+            className="absolute w-full h-full object-cover rounded-[24px]"
+          />
           <div
             className="absolute bottom-0 p-8 justify-start w-full 
             flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20"

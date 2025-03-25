@@ -53,7 +53,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Mobile App Developer",
+    title: "Mobile Engineer",
     icon: mobile,
   },
   {
@@ -79,7 +79,14 @@ const skills = [
   },
   {
     title: "Frameworks",
-    list: ["NodeJs", "Flutter", ".Net Core", "Spring Boot", "Flask", "Tailwind"],
+    list: [
+      "NodeJs",
+      "Flutter",
+      ".Net Core",
+      "Spring Boot",
+      "Flask",
+      "Tailwind",
+    ],
   },
   {
     title: "Tools",
@@ -148,25 +155,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Embedded Systems Engineering Intern",
-    company_name: "New Era Research and Development",
-    icon: nerd,
-    iconBg: "#FFFFFF",
-    date: "Mar 2022 - Jun 2022",
-  },
-  {
-    title: "Software Engineering Mentor",
-    company_name: "Africa to Silicon Valley",
-    icon: a2sv,
-    iconBg: "#333333",
-    date: "Oct 2022 - May 2023",
-  },
-  {
-    title: "Mobile App Developer",
-    company_name: "Africa to Silicon Valley",
-    icon: a2sv,
-    iconBg: "#333333",
-    date: "Sep 2023 - Feb 2024",
+    title: "Full Stack Developer",
+    company_name: "Empire Transportation Provider Inc",
+    icon: empire,
+    iconBg: "#eaeaec",
+    date: "Aug 2024 - present",
+    description: [
+      "Worked on an employee management system that automates employee invoice generation and distribution.",
+      "Used Python Flask framework with PostgreSQL and hosted the service on AWS infrastructure, utilizing EC2 and Amazon S3 to implement efficient feature hosting and access to employee data.",
+    ],
   },
   {
     title: "Software Engineer",
@@ -174,20 +171,52 @@ const experiences = [
     icon: korenti,
     iconBg: "#eaeaec",
     date: "Mar 2022 - Oct 2024",
+    description: [
+      "Developed a .Net Core Interop system to integrate a hematology analyzer (hospital lab equipment) into a web-based hospital management system with over 85,000 patient records across clinics in Addis Ababa, Ethiopia.",
+      "Practiced Agile Methodologies and conducted interviews with doctors, lab technicians and medical receptionists to meet client needs with each Agile iteration.",
+      "Designed and implemented customized user interfaces for multiple clinics that resulted in an increase in daily patient data processing productivity by 30%.",
+      "Worked on a React and Spring-Boot-based inventory management system with generative AI features for decision making to reduce stock discrepancies by 15% for a growing retail client.",
+    ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Empire Transportation Provider Inc",
-    icon: empire,
+    title: "Mobile Engineer",
+    company_name: "Africa to Silicon Valley",
+    icon: a2sv,
     iconBg: "#333333",
-    date: "Aug 2024 - present",
+    date: "Sep 2023 - Feb 2024",
+    description: [
+      "Worked on a food and restaurant rating mobile app called RateEat deployed in Ethiopia.",
+      "Focused on overseeing clean architecture, test-driven development, and state management of the project using BLoC pattern that increased code reusability and performance by 40%.",
+      "Collaborated with frontend and product teams to optimize the app’s UI/UX, improving user engagement.",
+      "Contributed to monetization strategies that helped secure Google funding by enhancing app features and performance.",
+    ],
+  },
+  {
+    title: "Software Engineering Mentor",
+    company_name: "Africa to Silicon Valley",
+    icon: a2sv,
+    iconBg: "#333333",
+    date: "Oct 2022 - May 2023",
+    description: [
+      "Mentored 15+ students on Data Structures & Algorithms, guiding 5 trainees to secure internships at A2SV and top tech companies in Ethiopia, focusing on competitive programming and coding interview preparation.",
+    ],
+  },
+  {
+    title: "Embedded Systems Engineering Intern",
+    company_name: "New Era Research and Development",
+    icon: nerd,
+    iconBg: "#FFFFFF",
+    date: "Mar 2022 - Jun 2022",
+    description: [
+      "Led a team of 5 and researched building a Smart home system using a distributed systems design for security improvement.",
+    ],
   },
 ];
 
 const projects = [
   {
     id: "project-1",
-    name: "Adega",
+    name: "Car Accident Management",
     description:
       "My BSc final year project prototype for a car accident management system.",
     tags: [
@@ -233,7 +262,7 @@ const projects = [
   },
   {
     id: "project-3",
-    name: "Vocab-type",
+    name: "Typing-Test",
     description:
       "Speed typing game with word definitions to improve vocabulary.",
     tags: [
@@ -256,7 +285,7 @@ const projects = [
   },
   {
     id: "project-4",
-    name: "Mekdim",
+    name: "Mekdim School Portal",
     description: `An enterprise-level school portal web application made by a team of 26 students I led.`,
     tags: [
       {

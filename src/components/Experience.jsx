@@ -49,7 +49,11 @@ const ExperienceCard = ({ experience }) => (
       >
         {experience.company_name}
       </p>
-      {/* Add a work description tag */}
+      <ul className="list-disc text-jetLight text-[15px] font-semibold tracking-[1px] mt-1">
+        {experience.description.map((task) => {
+          return <li>{task}</li>;
+        })}
+      </ul>
     </div>
   </VerticalTimelineElement>
 );
