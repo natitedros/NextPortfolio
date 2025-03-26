@@ -47,9 +47,21 @@ import empire from "./company/empire.png";
 import a2sv from "./company/a2sv.png";
 
 import adega from "./projects/adega-home.png";
+import adega1 from "./projects/adega1.png";
+import adega2 from "./projects/adega2.png";
 import mekdim from "./projects/mekdim-home.png";
+import mekdim1 from "./projects/mekdim1.png";
+import mekdim2 from "./projects/mekdim2.png";
+import mekdim3 from "./projects/mekdim3.png";
 import rateeat from "./projects/rateat.webp";
+import rateeat1 from "./projects/rateeat1.png";
+import rateeat2 from "./projects/rateeat2.png";
 import vocabtype from "./projects/vocabtype.png";
+import typing1 from "./projects/typing-test1.png";
+import typing2 from "./projects/typing-test2.png";
+import typing3 from "./projects/typing-test3.png";
+import brickbreaker1 from "./projects/brick-breaker1.png";
+import brickbreaker2 from "./projects/brick-breaker2.png";
 
 export {
   bwmap,
@@ -98,4 +110,16 @@ export {
   nerd,
   leftArrow,
   rightArrow,
+  adega1,
+  adega2,
+  mekdim1,
+  mekdim2,
+  mekdim3,
+  rateeat1,
+  rateeat2,
+  typing1,
+  typing2,
+  typing3,
+  brickbreaker1,
+  brickbreaker2,
 };

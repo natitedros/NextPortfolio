@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import {
-  github,
-  pineapple,
-  pineappleHover,
-  leftArrow,
-  rightArrow,
-} from "../assets";
+import { github, leftArrow, rightArrow } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
 
@@ -22,13 +16,25 @@ const ProjectCard = ({
   repo,
   demo,
   duration,
-  technologies,
   tags,
   index,
   active,
   handleClick,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Auto-slide effect
+  useEffect(() => {
+    if (images.length <= 1) return; // Don't auto-slide if there's only one image
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // 2000 milliseconds = 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [images.length]);
 
   const nextImage = (e) => {
     e.stopPropagation();
@@ -60,8 +66,8 @@ const ProjectCard = ({
         <div className="flex items-center justify-start pr-[8.5rem]">
           <h3
             className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[24px] text-timberWolf tracking-[3px]
-        absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
+        whitespace-nowrap sm:text-[27px] text-[15px] text-timberWolf tracking-[3px]
+        absolute lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
         leading-none z-20"
           >
             {name}
@@ -70,27 +76,27 @@ const ProjectCard = ({
       ) : (
         <div className="absolute inset-0 flex overflow-hidden rounded-[24px]">
           {/* Slideshow Section */}
-          <div className="absolute w-1/2 h-1/2 top-0">
+          <div className="absolute w-1/2 h-1/2 top-0 z-10">
             {images.length > 0 && (
               <>
                 <img
                   src={images[currentImageIndex]}
                   alt={`${name} project image ${currentImageIndex + 1}`}
-                  className="absolute w-full h-full object-cover"
+                  className="absolute w-full h-full object-cover transition duration-300 ease-in-out"
                 />
                 {images.length > 1 && (
                   <>
                     <button
                       onClick={prevImage}
                       className="absolute left-2 top-1/2 transform -translate-y-1/2 
-                      bg-black/20 text-white p-2 rounded-full z-20"
+                      bg-white/20 text-white p-2 rounded-full z-20"
                     >
                       <img src={leftArrow} alt="Previous" className="w-6 h-6" />
                     </button>
                     <button
                       onClick={nextImage}
                       className="absolute right-2 top-1/2 transform -translate-y-1/2 
-                      bg-black/20 text-white p-2 rounded-full z-20"
+                      bg-white/20 text-white p-2 rounded-full z-20"
                     >
                       <img src={rightArrow} alt="Next" className="w-6 h-6" />
                     </button>
@@ -116,7 +122,7 @@ const ProjectCard = ({
           {/* Project Info Section */}
           <div className="absolute w-1/2 h-1/2 right-0 p-4 bg-[rgba(50,50,50,0.8)] text-white">
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-2xl font-bold">{name}</h2>
+              <h2 className="text-md sm:text-2xl font-bold">{name}</h2>
               {repo !== "#" && (
                 <div
                   onClick={(e) => {
@@ -163,7 +169,7 @@ const ProjectCard = ({
                 rounded-[10px] glassmorphism mt-1
                hover:bg-battleGray 
                 hover:text-eerieBlack transition duration-[0.2s] 
-                ease-in-out z-20"
+                ease-in-out z-30"
                     onClick={(e) => {
                       e.stopPropagation();
                       window.open(demo, "_blank");
@@ -179,7 +185,7 @@ const ProjectCard = ({
           {/* Scrollable Description */}
           <div
             className="absolute bottom-0 left-0 w-full h-1/2 p-4
-            bg-jetLight max-h-[250px] overflow-y-auto"
+            bg-jetLight max-h-[250px] overflow-y-auto z-20"
           >
             <ul
               className="text-silver sm:text-[14px] text-[12px] 
