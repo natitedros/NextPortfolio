@@ -1,7 +1,7 @@
 import bwmap from "./backgrounds/bw-map.jpeg";
-import nairobi from "./backgrounds/nairobi.png";
 import whiteabstract from "./backgrounds/white-abstract.png";
 import worldmap from "./backgrounds/world-map.png";
+import nycbg from "./backgrounds/nyc-bg.jpg";
 
 import logo from "./logo/logo-bold.png";
 import logotext from "./logo/logo-text-black.png";
@@ -17,8 +17,6 @@ import github from "./icons/github.png";
 import close from "./icons/close.png";
 import download from "./icons/download.png";
 import downloadHover from "./icons/downloadHover.png";
-import pineapple from "./icons/pineapple.png";
-import pineappleHover from "./icons/pineappleHover.png";
 import menu from "./icons/menu.png";
 import resume from "./icons/resume.png";
 import send from "./icons/send.png";
@@ -46,17 +44,14 @@ import korenti from "./company/korenti.png";
 import empire from "./company/empire.png";
 import a2sv from "./company/a2sv.png";
 
-import adega from "./projects/adega-home.png";
 import adega1 from "./projects/adega1.png";
 import adega2 from "./projects/adega2.png";
 import mekdim from "./projects/mekdim-home.png";
 import mekdim1 from "./projects/mekdim1.png";
 import mekdim2 from "./projects/mekdim2.png";
 import mekdim3 from "./projects/mekdim3.png";
-import rateeat from "./projects/rateat.webp";
 import rateeat1 from "./projects/rateeat1.png";
 import rateeat2 from "./projects/rateeat2.png";
-import vocabtype from "./projects/vocabtype.png";
 import typing1 from "./projects/typing-test1.png";
 import typing2 from "./projects/typing-test2.png";
 import typing3 from "./projects/typing-test3.png";
@@ -65,7 +60,7 @@ import brickbreaker2 from "./projects/brick-breaker2.png";
 
 export {
   bwmap,
-  nairobi,
+  nycbg,
   whiteabstract,
   worldmap,
   logo,
@@ -80,8 +75,6 @@ export {
   close,
   download,
   downloadHover,
-  pineapple,
-  pineappleHover,
   menu,
   resume,
   send,
@@ -100,10 +93,7 @@ export {
   redux,
   tailwind,
   typescript,
-  adega,
   mekdim,
-  rateeat,
-  vocabtype,
   korenti,
   empire,
   a2sv,
