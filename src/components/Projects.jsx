@@ -175,7 +175,7 @@ const ProjectCard = ({
                       window.open(demo, "_blank");
                     }}
                   >
-                    Project Link
+                    Project Demo
                   </button>
                 </div>
               )}

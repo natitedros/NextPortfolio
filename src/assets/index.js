@@ -57,6 +57,8 @@ import typing2 from "./projects/typing-test2.png";
 import typing3 from "./projects/typing-test3.png";
 import brickbreaker1 from "./projects/brick-breaker1.png";
 import brickbreaker2 from "./projects/brick-breaker2.png";
+import schedulingAlgo1 from "./projects/scheduling-algo1.png";
+import schedulingAlgo2 from "./projects/scheduling-algo2.png";
 
 export {
   bwmap,
@@ -110,6 +112,8 @@ export {
   typing1,
   typing2,
   typing3,
+  schedulingAlgo1,
+  schedulingAlgo2,
   brickbreaker1,
   brickbreaker2,
 };

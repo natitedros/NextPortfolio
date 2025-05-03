@@ -28,6 +28,8 @@ import {
   typing1,
   typing2,
   typing3,
+  schedulingAlgo1,
+  schedulingAlgo2,
   brickbreaker1,
   brickbreaker2,
   korenti,
@@ -284,36 +286,6 @@ const projects = [
   },
   {
     id: "project-3",
-    name: "Typing-Test",
-    description: [
-      "Project: Built a typing speed test game that measures WPM (words per minute) while teaching users new vocabulary through definitions fetched from a free API.",
-      "My Roles: Developed the frontend application, implemented word fetching logic, and designed a responsive UI with light/dark mode toggle.",
-      "Result: Created an engaging, educational tool that helps users improve typing speed and learn new words in a customizable interface.",
-    ],
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    images: [typing2, typing1, typing3],
-    repo: "https://github.com/natitedros/Typing-Test",
-    demo: "https://typingtest-natnaeldesta.netlify.app/",
-    duration: "15 days",
-    category: "Frontend Development",
-    team: "1",
-    technologies: ["React", "Tailwind", "Typescript"],
-  },
-  {
-    id: "project-4",
     name: "Mekdim School Portal",
     description: [
       "Project: Developed a web-based school management application as a semester project for a Software Engineering course, aimed at streamlining administrative and academic processes.",
@@ -343,7 +315,67 @@ const projects = [
     technologies: ["React", "Tailwind", "Typescript"],
   },
   {
+    id: "project-4",
+    name: "CPU Scheduling Visualizer",
+    description: [
+      "Project: A web tool to visualize CPU scheduling algorithms like FCFS and Round Robin, built with HTML, CSS, and TypeScript.",
+      "My Roles: Developed the entire application, including UI design, algorithm implementation, and interactive features like timeline visualization and process customization.",
+      "Result: An easy-to-use simulator with real-time visuals and customizable settings, plus a live demo.",
+    ],
+    tags: [
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OOP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML/CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    images: [schedulingAlgo1, schedulingAlgo2],
+    repo: "https://github.com/natitedros/OS-scheduling-visualization/",
+    demo: "https://natitedros.github.io/OS-scheduling-visualization/",
+    duration: "2 weeks",
+    category: "Frontend Development",
+    team: "1",
+    technologies: ["React", "Tailwind", "Typescript"],
+  },
+  {
     id: "project-5",
+    name: "Typing-Test",
+    description: [
+      "Project: Built a typing speed test game that measures WPM (words per minute) while teaching users new vocabulary through definitions fetched from a free API.",
+      "My Roles: Developed the frontend application, implemented word fetching logic, and designed a responsive UI with light/dark mode toggle.",
+      "Result: Created an engaging, educational tool that helps users improve typing speed and learn new words in a customizable interface.",
+    ],
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    images: [typing2, typing1, typing3],
+    repo: "https://github.com/natitedros/Typing-Test",
+    demo: "https://typingtest-natnaeldesta.netlify.app/",
+    duration: "15 days",
+    category: "Frontend Development",
+    team: "1",
+    technologies: ["React", "Tailwind", "Typescript"],
+  },
+  {
+    id: "project-6",
     name: "Brick Breaker",
     description: [
       "Project: Developed Brick Breaker, a classic arcade-style game where players break bricks by bouncing a ball off a paddle, featuring single-player and multiplayer modes with background music.",
