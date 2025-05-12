@@ -59,6 +59,9 @@ import brickbreaker1 from "./projects/brick-breaker1.png";
 import brickbreaker2 from "./projects/brick-breaker2.png";
 import schedulingAlgo1 from "./projects/scheduling-algo1.png";
 import schedulingAlgo2 from "./projects/scheduling-algo2.png";
+import dvcExtension1 from "./projects/dvc-extension-1.png";
+import dvcExtension2 from "./projects/dvc-extension-2.png";
+import dvcExtension3 from "./projects/dvc-extension-3.png";
 
 export {
   bwmap,
@@ -116,4 +119,7 @@ export {
   schedulingAlgo2,
   brickbreaker1,
   brickbreaker2,
+  dvcExtension1,
+  dvcExtension2,
+  dvcExtension3
 };

@@ -32,6 +32,9 @@ import {
   schedulingAlgo2,
   brickbreaker1,
   brickbreaker2,
+  dvcExtension1,
+  dvcExtension2,
+  dvcExtension3,
   korenti,
   empire,
   nerd,
@@ -256,6 +259,32 @@ const projects = [
   },
   {
     id: "project-2",
+    name: "DVC Change View",
+    description: [
+      "Project: Developed and published a VS Code  extension for tracking and visualizing changes in DVC-tracked files, featuring line-by-line diffs, image comparison tools, and version reverts.",
+      "My Roles: Designed and developed the extension, implementing the sidebar UI, diff viewers: line by line, pixel overlays and bitmasking, and DVC integration.",
+      "Result: Published on the VS Code Marketplace, enhancing workflow efficiency for data version control users.",
+    ],
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HTML/CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    images: [dvcExtension1, dvcExtension2, dvcExtension3],
+    repo: "https://github.com/natitedros/dvc-extension/tree/main/dvc-change-view",
+    demo: "https://github.com/natitedros/dvc-extension/tree/main/dvc-change-view",
+    duration: "1.5 months",
+    category: "Frontend Development",
+    team: "1",
+    technologies: ["HTML", "CSS", "Typescript"],
+  },
+  {
+    id: "project-3",
     name: "RateEat",
     description: [
       "Project: Developed RateEat, a food and restaurant rating mobile app deployed and actively used in Ethiopia. Famous among college freshemen.",
@@ -285,7 +314,7 @@ const projects = [
     technologies: ["React", "Tailwind", "Typescript"],
   },
   {
-    id: "project-3",
+    id: "project-4",
     name: "Mekdim School Portal",
     description: [
       "Project: Developed a web-based school management application as a semester project for a Software Engineering course, aimed at streamlining administrative and academic processes.",
@@ -315,7 +344,7 @@ const projects = [
     technologies: ["React", "Tailwind", "Typescript"],
   },
   {
-    id: "project-4",
+    id: "project-5",
     name: "CPU Scheduling Visualizer",
     description: [
       "Project: A web tool to visualize CPU scheduling algorithms like FCFS and Round Robin, built with HTML, CSS, and TypeScript.",
@@ -345,7 +374,7 @@ const projects = [
     technologies: ["React", "Tailwind", "Typescript"],
   },
   {
-    id: "project-5",
+    id: "project-6",
     name: "Typing-Test",
     description: [
       "Project: Built a typing speed test game that measures WPM (words per minute) while teaching users new vocabulary through definitions fetched from a free API.",
@@ -375,7 +404,7 @@ const projects = [
     technologies: ["React", "Tailwind", "Typescript"],
   },
   {
-    id: "project-6",
+    id: "project-7",
     name: "Brick Breaker",
     description: [
       "Project: Developed Brick Breaker, a classic arcade-style game where players break bricks by bouncing a ball off a paddle, featuring single-player and multiplayer modes with background music.",
