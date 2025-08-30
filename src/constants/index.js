@@ -39,6 +39,7 @@ import {
   empire,
   nerd,
   a2sv,
+  fordham,
 } from "../assets";
 
 export const navLinks = [
@@ -168,11 +169,21 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Research Assistant",
+    company_name: "Fordham University",
+    icon: fordham,
+    iconBg: "#ffffffff",
+    date: "Aug 2025 - present",
+    description: [
+      "Work on integrating blockchain-based security with computer vision to develop a robust visual homing system."  
+    ],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Empire Transportation Provider Inc",
     icon: empire,
     iconBg: "#eaeaec",
-    date: "Aug 2024 - present",
+    date: "Aug 2024 - Aug 2025",
     description: [
       "Worked on an employee management system that automates employee invoice generation and distribution.",
       "Used Python Flask framework with PostgreSQL and hosted the service on AWS infrastructure, utilizing EC2 and Amazon S3 to implement efficient feature hosting and access to employee data.",

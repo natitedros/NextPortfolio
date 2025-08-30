@@ -43,6 +43,7 @@ import nerd from "./company/nerd.jpeg";
 import korenti from "./company/korenti.png";
 import empire from "./company/empire.png";
 import a2sv from "./company/a2sv.png";
+import fordham from "./company/fordham.png";
 
 import adega1 from "./projects/adega1.png";
 import adega2 from "./projects/adega2.png";
@@ -103,6 +104,7 @@ export {
   empire,
   a2sv,
   nerd,
+  fordham,
   leftArrow,
   rightArrow,
   adega1,
