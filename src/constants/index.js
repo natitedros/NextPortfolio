@@ -175,7 +175,8 @@ const experiences = [
     iconBg: "#ffffffff",
     date: "Aug 2025 - present",
     description: [
-      "Work on integrating blockchain-based security with computer vision to develop a robust visual homing system."  
+      "Developed a visual navigation system for the autonomous localization of robots in GPS-denied environments.",
+      "Designed a Federated Learning structure of CNN models with Blockchain consensus for secure visual navigation, reducing data transfer by 60% and ensuring global model integrity through decentralized validation."  
     ],
   },
   {
